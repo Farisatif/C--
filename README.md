@@ -8,7 +8,7 @@
   
 [![Accounts](https://img.shields.io/badge/Zeref_Accounts-af57f1?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/f.7yw)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](farisatif7780@gmail.com)
-[![Telegram](https://img.shields.io/badge/Support-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/f_7yw)
-[![WhatsApp](https://img.shields.io/badge/Support-2CA5E0?style=for-the-badge&logo=whatsApp&logoColor=white)](https://me.77)
+[![Telegram](https://img.shields.io/badge/Telegram-0088CC?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/f_7yw)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsApp&logoColor=white)](https://me.77)
 
 </div>
