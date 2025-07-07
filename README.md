@@ -6,7 +6,7 @@
 
 <div align="center">
   
-[![Accounts](https://img.shields.io/badge/GataBot_Accounts-af57f1?style=for-the-badge&logo=biolink&logoColor=white)](https://www.atom.bio/gatabot)
+[![Accounts](https://img.shields.io/badge/Zeref_Accounts-af57f1?style=for-the-badge&logo=biolink&logoColor=white)](https://www.instagram.com/f.7yw)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](farisatif7780@gmail.com)
 [![Support](https://img.shields.io/badge/Support-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/f_7yw)
 
