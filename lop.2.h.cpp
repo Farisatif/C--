@@ -64,8 +64,60 @@ void menu_3() {
     printArray(arrNum, numEle);
 }
 
+void menu_6(){
+
+cout << "Enter Index To Delete it :" << endl;  
+
+                cin >> indexV;  
+                if(indexV<numEle){
+                for(int i = indexV; i < numEle; i++ ){
+                        arrNum[i] = arrNum[i+1];
+                     }
+                     arrNum[numEle-1]=0;
+                     numEle--;
+                     printArray(arrNum, numEle);
+               }else{
+               
+               cout << "Index of Elements Not found !" << endl;
+          }     
+}
+void menu_7(){
+
+cout << "Enter Index value :" << endl;
+cin >> indexV;
+cout << "Enter New value :" << endl;
+cin >> value;
+arrNum[indexV] = value;
+printArray(arrNum, numEle);
+
+}
+
+void menu_8(){
+
+bool f = false;
+int oldValue;
+cout << "Enter Old Value : " << endl; 
+cin >> oldValue;
+for(int i = 0 ; i < numEle; i++){
+if(arrNum [i] == oldValue){
+
+cout << "Enter A New Value : " << endl;
+cin >> value;
+arrNum [i] = value;
+printArray(arrNum, numEle);
+f = true;
+break;
+
+}
+}if(f == false){
+
+cout << "Not Found !!" << endl;
+
+}
+}
+
 int main() {
-    cout << "Enter array capacity (max 100):\n";
+    cout << "Enter array :\n";
     cin >> l;
     if (l > 100 || l <= 0) {
         cout << "Invalid capacity!\n";
@@ -76,7 +128,7 @@ int main() {
     cin >> numEle;
 
     if (numEle > l || numEle < 0) {
-        cout << "Inval""id number of initial elements!\n";
+        cout << "Invalid number of initial elements!\n";
         return 0;
     }
 
@@ -92,7 +144,13 @@ int main() {
         cout << "[1] Insert at beginning\n";
         cout << "[2] Insert at any position\n";
         cout << "[3] Insert at end\n";
-        cout << "[4] Exit\n";
+        cout << "[4] To Delete last Element\n";
+        cout << "[5] To Delete From Start Element\n";
+        cout << "[6] To Delete From Index of Element\n";
+        cout << "[7] To Update by Index of Element\n";
+        cout << "[8] To Update by Value of Element\n";
+        cout << "[9] To Print Array\n";
+        cout << "[0] To Exit .. \n";
         cout << ">_ ";
         cin >> menu;
 
@@ -103,23 +161,62 @@ int main() {
         }
 
         switch (menu) {
+            case 0:
+                cout << "Thank You For Testing My Program ( :" << endl;
+            return 0;
+            
+             
             case 1:
                 menu_1();
                 break;
+                
             case 2:
                 menu_2();
                 break;
+                
             case 3:
                 menu_3();
                 break;
+                
             case 4:
-                cout << "Exiting...\n";
+                cout << "We going to delete the last Element :\n";
+                arrNum[numEle-1]=0;
+                numEle--;
+                printArray(arrNum, numEle);
                 break;
+                
+            case 5:
+                cout << "We going to delete the last Element :\n";
+                for(int i = 0; i < numEle; i++){
+                
+                arrNum[i] = arrNum[i+1];
+                
+                }
+                arrNum[numEle-1]=0;
+                numEle--;
+                printArray(arrNum, numEle);
+                break;
+            
+            case 6:
+               menu_6();
+                break;
+           
+            case 7:
+                menu_7();
+                break;  
+                
+            case 8:
+                menu_8();
+                break;      
+            case 9:
+                printArray(arrNum, numEle);
+                break;      
+                
             default:
                 cout << "Choose again!\n";
                 break;
         }
-    } while (menu != 4);
+    } while (menu != 10);
 
     return 0;
 }
