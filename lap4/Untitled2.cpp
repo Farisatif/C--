@@ -21,8 +21,7 @@ int main() {
         int arrNum[l];
         cout << "Enter the array elements : " << endl;
         for (int i = 0; i < numEle; i++) {
-            cout << "Enter elements ["<< i+
-			 << "] : ";
+            cout << "Enter elements ["<< i+ << "] : ";
 			cin >> arrNum[i];
         }
 
